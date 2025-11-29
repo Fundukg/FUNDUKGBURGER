@@ -2,16 +2,235 @@
   margin: 0;
   padding: 0;
 }
-html{
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
 }
 body {
-    margin: 0 auto;
-    height: 100%;
-    flex-direction: column;
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 45px;
-    color: #000000;
-    background: #ffffff;
+  margin: 0 auto;
+  height: 100%;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 45px;
+  color: #000000;
+  background: #ffffff;
+}
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #eda418 47.4%,
+    rgba(237, 164, 24, 0) 100%
+  );
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 70px;
+  padding-top: 105px;
+  padding-right: 65px;
+}
+.logo {
+  display: block;
+  margin-top: 8px;
+}
+.navigation_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: auto 0;
+  padding: 0;
+  margin-left: clamp(20px, 10vw, 150px);
+  list-style: none;
+}
+.navigation_title {
+  display: block;
+  min-width: 200px;
+  font-weight: 800;
+  font-size: 25px;
+  font-family: Montserrat, sans-serif;
+  line-height: 100px;
+  text-decoration: none;
+  color: #000;
+}
+.button_basket {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: none;
+  background-color: #000;
+  border-radius: 40px;
+}
+.headear_container_content {
+  display: flex;
+  padding: 25px;
+  gap: 30px;
+  justify-self: center;
+}
+
+.header_list {
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: Montserrat, sans-serif;
+}
+.header_text_delivery {
+  margin: 0;
+  padding: 0;
+  padding-top: 190px;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 100%;
+}
+.header_text_sale {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.header_button_order_container {
+  display: block;
+  border-radius: 50px;
+  background: #e52626;
+  border: none;
+  width: 145px;
+  height: 60px;
+  /* line-height: 25px; */
+}
+.header_button_order {
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: 100%;
+  color: #ffffff;
+}
+.burger_container_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 10px;
+}
+.main {
+  width: 100%;
+  min-height: 900px;
+  background: color(#ffffff);
+  /* text-align: center; */
+}
+.container_catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+}
+.catalog_title {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-size: 45px;
+  font-family: Montserrat, sans-serif;
+  line-height: 45px;
+  color: #000000;
+}
+.catalog_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  margin-left: 15px;
+  padding: 0;
+  gap: 70px 30px;
+  list-style: none;
+}
+.catalog_item {
+  width: 450px;
+  height: 300px;
+}
+.catalog_text {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  line-height: 45px;
+  color: #000000;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 35px;
+}
+.footer {
+  width: 100%;
+  min-height: 450px;
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #eda61d 100%);
+}
+.footer_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 101px;
+  margin: auto 0;
+  padding: 0;
+  margin-left: 150px;
+  list-style: none;
+  padding-top: 157px;
+}
+.footer_list_title {
+  font-family: Montserrat, sans-serif;
+  line-height: 45px;
+  color: #000000;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  text-decoration: none;
+}
+.footer_text {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto 0;
+  padding: 0;
+  margin-left: 150px;
+  list-style: none;
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+.footer_text_item {
+  display: grid;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  line-height: 45px;
+  color: #000000;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  text-decoration: none;
+}
+.contact_link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin: auto 0;
+  padding: 0;
+  margin-left: 150px;
+  list-style: none;
+}
+.contact_VK_img {
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
 }
